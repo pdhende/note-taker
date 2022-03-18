@@ -22,7 +22,6 @@ app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-
 // Route to get notes from the db.json file
 app.get('/api/notes', (req, res) => res.json(noteValues));
 
