@@ -16,7 +16,7 @@ note.post('/notes', (req, res) => {
     const newNote = {
         title,
         text,
-        noteId: uuid.v4(),
+        id: uuid.v4(),
     };  
     console.log(newNote);
     // console.log("This is filepath:" +filePath);

@@ -6,16 +6,16 @@
     {
         "title": "Note Testing",
         "text": "Note test test",
-        "noteId": "f5918cf6-79bc-40b4-9849-caca89a60f49"
+        "id": "f5918cf6-79bc-40b4-9849-caca89a60f49"
     },
     {
         "title": "Complete homework",
         "text": "The express homework is due tomorrow!",
-        "noteId": "bcfd7c98-9369-41d3-9114-52c3dcf637d8"
+        "id": "bcfd7c98-9369-41d3-9114-52c3dcf637d8"
     },
     {
         "title": "Pay Bills",
         "text": "Water, electricity, HOA",
-        "noteId": "926b1bd8-198f-4b6e-8eda-9f611a44f85e"
+        "id": "926b1bd8-198f-4b6e-8eda-9f611a44f85e"
     }
 ]
