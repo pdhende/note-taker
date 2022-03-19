@@ -2,10 +2,15 @@ const note = require('express').Router();
 const uuid = require('uuid');
 const noteValues = require('../db/db.json');
 const fsFunctns = require('../helper/fsUtility');
+// const util = require('util');
 const filePath = './db/db.json';
 
 // Route to GET notes from the db.json file
-note.get('/notes', (req, res) => res.json(noteValues));
+// note.get('/notes', (req, res) => res.json(noteValues));
+note.get('/notes', (req, res) => {
+    fsFunctns.readFromFile(filePath)
+    .then((data) => res.json(JSON.parse(data)));
+  });
 
 // Rout to POST a note to the db.json file
 note.post('/notes', (req, res) => {

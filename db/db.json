@@ -17,5 +17,25 @@
         "title": "Pay Bills",
         "text": "Water, electricity, HOA",
         "id": "926b1bd8-198f-4b6e-8eda-9f611a44f85e"
+    },
+    {
+        "title": "Conference",
+        "text": "Bright minds conference virtual.",
+        "id": "dcad1313-9cad-4e61-9780-c9e3b0497df8"
+    },
+    {
+        "title": "Book Tickets",
+        "text": "Book tickets to the conference!",
+        "id": "64bae56b-f553-408d-a4fc-e1e8d27a3df7"
+    },
+    {
+        "title": "Cancel appointment",
+        "text": "Cancel",
+        "id": "91175238-2822-4b93-aaa4-a127e7f41a77"
+    },
+    {
+        "title": "Schedule tour",
+        "text": "This tour is for senior managers and managers.",
+        "id": "b910d73d-7ee6-4a4c-a87d-5180c0782d8b"
     }
 ]

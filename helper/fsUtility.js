@@ -1,4 +1,8 @@
 const fs = require('fs');
+const util = require('util');
+
+// Function to read notes from the db.json file
+const readFromFile = util.promisify(fs.readFile);
 
 //Function to write notes(data) to db.json file
 const writeFile = (filePath, noteVal, methodVal) => {
@@ -34,4 +38,4 @@ const updateNotes = (filePath, noteVal) => {
     });
 }
 
-module.exports = { writeFile, updateNotes };
+module.exports = { readFromFile, writeFile, updateNotes };
