@@ -1,9 +1,5 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
         "title": "Note Testing",
         "text": "Note test test",
         "id": "f5918cf6-79bc-40b4-9849-caca89a60f49"
@@ -37,5 +33,15 @@
         "title": "Schedule tour",
         "text": "This tour is for senior managers and managers.",
         "id": "b910d73d-7ee6-4a4c-a87d-5180c0782d8b"
+    },
+    {
+        "title": "Prepare presentation",
+        "text": "Sustainability and biodegradable materials",
+        "id": "702664ae-dc1b-4d74-a9fb-af1a460e38b9"
+    },
+    {
+        "title": "Water plants",
+        "text": "Water ",
+        "id": "493d1b71-07ca-435b-a53f-873d015c3887"
     }
 ]

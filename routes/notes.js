@@ -1,6 +1,6 @@
 const note = require('express').Router();
 const uuid = require('uuid');
-const noteValues = require('../db/db.json');
+// const noteValues = require('../db/db.json');
 const fsFunctns = require('../helper/fsUtility');
 // const util = require('util');
 const filePath = './db/db.json';
@@ -12,7 +12,7 @@ note.get('/notes', (req, res) => {
     .then((data) => res.json(JSON.parse(data)));
   });
 
-// Rout to POST a note to the db.json file
+// Route to POST a note to the db.json file
 note.post('/notes', (req, res) => {
     console.log(req.body);
 
@@ -26,10 +26,12 @@ note.post('/notes', (req, res) => {
     console.log(newNote);
     // console.log("This is filepath:" +filePath);
     fsFunctns.updateNotes(filePath, newNote);
-    res.json(`Your note has been saved!`);
+    // res.json(`Your note has been saved!`);
 });
 
-// const randomVal = `The random value is ${uuid.v4()}`;
-// console.log(randomVal);
+// Route to DELETE a note to the db.json file
+note.delete('/notes/:id', (req, res) =>{
+    console.log(`delete ${req.params.id}`);
+});
 
 module.exports = note;
