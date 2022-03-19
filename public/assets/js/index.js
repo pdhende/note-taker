@@ -74,6 +74,7 @@ const handleNoteSave = () => {
     text: noteText.value,
   };
   saveNote(newNote).then(() => {
+    console.log('DOne saving notes!');
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -100,7 +101,9 @@ const handleNoteDelete = (e) => {
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
   e.preventDefault();
+  console.log("In handle Note View");
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
+  console.log(activeNote);
   renderActiveNote();
 };
 
