@@ -5,22 +5,34 @@ const util = require('util');
 const readFromFile = util.promisify(fs.readFile);
 
 //Function to write notes(data) to db.json file
+const writeToFile = util.promisify(fs.writeFile);
+
 const writeFile = (filePath, noteVal, methodVal) => {
     const note = JSON.stringify(noteVal, null, 4);
-    fs.writeFile(filePath, note, (err) => {
-        if(err) {
-            console.error(err);
+    return writeToFile(filePath, note).then(() => {
+        if(methodVal === 'POST') {
+            return console.info(`The note has been saved!`);
         }
-        else {
-            if(methodVal === 'POST') {
-                console.info(`The note has been saved!`);
-            }
-            else{
-                console.info(`The note has been removed!`);
-            }
+        else{
+            return console.info(`The note has been removed!`);
         }
-    }); 
+    });
+    // fs.writeFile(filePath, note); 
 };
+
+// (err) => {
+//     if(err) {
+//         console.error(err);
+//     }
+//     else {
+//         if(methodVal === 'POST') {
+//             console.info(`The note has been saved!`);
+//         }
+//         else{
+//             console.info(`The note has been removed!`);
+//         }
+//     }
+// }
 
 // Function to add notes to the db.json file using POST method
 const updateNotes = (filePath, noteVal) => {

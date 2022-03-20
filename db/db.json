@@ -1,47 +1,27 @@
 [
     {
-        "title": "Note Testing",
-        "text": "Note test test",
-        "id": "f5918cf6-79bc-40b4-9849-caca89a60f49"
+        "title": "Schedule meeting",
+        "text": "Schedule meeting with CEO",
+        "id": "dc95c80e-4438-405f-a2fd-ec458092ad25"
     },
     {
-        "title": "Complete homework",
-        "text": "The express homework is due tomorrow!",
-        "id": "bcfd7c98-9369-41d3-9114-52c3dcf637d8"
+        "title": "Balance accounts",
+        "text": "Balance account",
+        "id": "9b3d3932-f9c2-4113-8595-9a68decb4bb4"
     },
     {
-        "title": "Pay Bills",
-        "text": "Water, electricity, HOA",
-        "id": "926b1bd8-198f-4b6e-8eda-9f611a44f85e"
+        "title": "Interview",
+        "text": "Interview prep",
+        "id": "839794b0-a1f9-47e7-ac2d-943587028d7e"
     },
     {
-        "title": "Conference",
-        "text": "Bright minds conference virtual.",
-        "id": "dcad1313-9cad-4e61-9780-c9e3b0497df8"
+        "title": "Send email",
+        "text": "Send emails about inventory update.",
+        "id": "81092f50-fc3e-470c-a2bf-d8fc8668031e"
     },
     {
-        "title": "Book Tickets",
-        "text": "Book tickets to the conference!",
-        "id": "64bae56b-f553-408d-a4fc-e1e8d27a3df7"
-    },
-    {
-        "title": "Cancel appointment",
-        "text": "Cancel",
-        "id": "91175238-2822-4b93-aaa4-a127e7f41a77"
-    },
-    {
-        "title": "Schedule tour",
-        "text": "This tour is for senior managers and managers.",
-        "id": "b910d73d-7ee6-4a4c-a87d-5180c0782d8b"
-    },
-    {
-        "title": "Prepare presentation",
-        "text": "Sustainability and biodegradable materials",
-        "id": "702664ae-dc1b-4d74-a9fb-af1a460e38b9"
-    },
-    {
-        "title": "Water plants",
-        "text": "Water ",
-        "id": "493d1b71-07ca-435b-a53f-873d015c3887"
+        "title": "Appointment",
+        "text": "Schedule appointment.",
+        "id": "db8d359b-0646-48bb-b6b9-c9886b3a3db4"
     }
 ]
