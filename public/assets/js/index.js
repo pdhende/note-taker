@@ -7,8 +7,6 @@ let noteList;
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
-  console.log(noteTitle);
-  console.log(noteText);
   saveNoteBtn = document.querySelector('.save-note');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
@@ -54,13 +52,13 @@ const deleteNote = (id) =>
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
-  console.log(activeNote.id+ "In activNote");
+  
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
-    console.log(noteTitle.value+ "In activNote");
+    
   } else {
     noteTitle.removeAttribute('readonly');
     noteText.removeAttribute('readonly');
@@ -75,7 +73,7 @@ const handleNoteSave = () => {
     text: noteText.value,
   };
   saveNote(newNote).then(() => {
-    console.log('DOne saving notes!');
+    
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -102,9 +100,9 @@ const handleNoteDelete = (e) => {
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
   e.preventDefault();
-  console.log("In handle Note View");
+  
   activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
-  console.log(activeNote);
+  
   renderActiveNote();
 };
 
@@ -115,7 +113,7 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
-  console.log('Inside save btn');
+  
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
@@ -126,8 +124,7 @@ const handleRenderSaveBtn = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
-  console.log(jsonNotes);
-  console.log(window.location.pathname);
+  
   if (window.location.pathname === '/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
@@ -168,12 +165,11 @@ const renderNoteList = async (notes) => {
   }
 
   jsonNotes.forEach((note) => {
-    console.log("in json foreach");
+    
     const li = createLi(note.title);
     li.dataset.note = JSON.stringify(note);
 
     noteListItems.push(li);
-    console.log(noteListItems);
   });
 
   if (window.location.pathname === '/notes') {

@@ -10,11 +10,6 @@
         "id": "9b3d3932-f9c2-4113-8595-9a68decb4bb4"
     },
     {
-        "title": "Interview",
-        "text": "Interview prep",
-        "id": "839794b0-a1f9-47e7-ac2d-943587028d7e"
-    },
-    {
         "title": "Send email",
         "text": "Send emails about inventory update.",
         "id": "81092f50-fc3e-470c-a2bf-d8fc8668031e"
@@ -23,5 +18,20 @@
         "title": "Appointment",
         "text": "Schedule appointment.",
         "id": "db8d359b-0646-48bb-b6b9-c9886b3a3db4"
+    },
+    {
+        "title": "Appraisal",
+        "text": "Send appraisals",
+        "id": "2ef7db7e-60fa-4e1f-bd74-d4a481aaf5db"
+    },
+    {
+        "title": "Presentation",
+        "text": "Prepare presentation.",
+        "id": "9f2a7efb-6919-4b66-84d2-a083b23f3f26"
+    },
+    {
+        "title": "Interview",
+        "text": "Interview preparation!",
+        "id": "1e3a46e3-3c19-4fce-80f9-dcebbe447bd8"
     }
 ]

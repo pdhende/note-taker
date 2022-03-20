@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-// const noteValues = require('./db/db.json');
 const api = require('./routes/notes');
 
 const app = express();

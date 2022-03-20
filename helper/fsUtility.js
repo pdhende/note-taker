@@ -17,22 +17,8 @@ const writeFile = (filePath, noteVal, methodVal) => {
             return console.info(`The note has been removed!`);
         }
     });
-    // fs.writeFile(filePath, note); 
 };
 
-// (err) => {
-//     if(err) {
-//         console.error(err);
-//     }
-//     else {
-//         if(methodVal === 'POST') {
-//             console.info(`The note has been saved!`);
-//         }
-//         else{
-//             console.info(`The note has been removed!`);
-//         }
-//     }
-// }
 
 // Function to add notes to the db.json file using POST method
 const updateNotes = (filePath, noteVal) => {
@@ -42,9 +28,7 @@ const updateNotes = (filePath, noteVal) => {
         }
         else {
             const allNotes = JSON.parse(data);
-            // console.log(allNotes);
             allNotes.push(noteVal);
-            console.log(allNotes);
             writeFile(filePath, allNotes, 'POST');
         }
     });
