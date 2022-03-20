@@ -6,6 +6,7 @@
 * [Built with](#built-with)
 * [How it works](#how-it-works)
 * [License](#license)
+* [Deployed application](#deployed-application)
 
 ## Description
   The note taker is an application that is used to write and save notes. The user can keep a track of daily tasks to be completed.
@@ -17,7 +18,6 @@
 ![image](https://user-images.githubusercontent.com/65467469/159147877-20bfb06c-8e81-4cc6-8da5-cedfff20c065.png)
 
 ![image](https://user-images.githubusercontent.com/65467469/159147891-fd899f0c-5f13-40e9-bf15-e51129b3676d.png)
-
 
 
 ## Built with
@@ -55,4 +55,8 @@ This application is built using :
 	
 ## License
  This application is licensed under the [MIT](https://github.com/pdhende/note-taker/blob/main/LICENSE) license.
+ 
+## Deployed application:
+  The application is deployed on Heroku. The URL is as follows:
+  https://shielded-ravine-20211.herokuapp.com/
 
